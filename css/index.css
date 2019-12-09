@@ -69,15 +69,14 @@ h1, h2, h3, h4, h5 {
 * {
 	box-sizing: border-box;
 	margin: 0;
-	margin: 0;
-    max-width: 100%;
+	max-width: 100%;
     font-family: 'Bangers', cursive, sans-serif;
     line-height: 1;
 }
 h5{
     letter-spacing: .2rem;
     font-size: 2rem;
-    margin: 0 0 5% 0;
+    margin: 5% 0 5% 0;
 }
 
 p{
@@ -143,7 +142,7 @@ nav a:hover{
 
 .second .one{
     font-weight: 200;
-    margin:0 2% 0 0;
+    margin:0 2% 0 0; 
 }
 
 .middle-img{
@@ -249,14 +248,51 @@ button{
     
 }
 
-/* @media (max-width: 480px){
-    nav{
+@media (max-width: 480px){
+    .links{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 300px;
+        letter-spacing: .3rem;
     }
 
-    .logoContainer{
+    nav a {
+        float: left;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+      }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 10%;
+        width: 80%;
+        padding:2%;
+    }
+
+    .third{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 10%;
+        width: 80%;
+        padding: 2%;
+    }
+
+    .containerOne h1{
+        margin: 0 0 0 20%;
+        /* font-size: 70px; */
+        width: 60%;
+        /* text-align: center; */
+    }
+
+    /* .logoContainer{
         width:15%;
     }
 
@@ -266,6 +302,5 @@ button{
 
     #about div{
         width: 90%;
-    }
-} */
-
+    } */
+}
