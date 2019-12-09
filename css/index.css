@@ -1,3 +1,271 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
 
+/* Set every element's box-sizing to border-box */
+/* * {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Indie Flower', cursive, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}  */
+
+/* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	margin: 0;
+    max-width: 100%;
+    font-family: 'Bangers', cursive, sans-serif;
+    line-height: 1;
+}
+h5{
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    margin: 0 0 5% 0;
+}
+
+p{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    /* margin: 2%; */
+    
+    /* word-spacing: 1rem; */
+}  
+nav{
+    display:flex;
+	justify-content: space-evenly;
+}
+
+.links{
+	display:flex;
+	justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+
+nav a{
+	color:grey;
+	text-decoration:none;
+}
+nav a:hover{
+	color:#AFEEEE;
+}
+
+.logo{
+    margin: 0 0 0 0;
+}
+
+.logoTwo{
+    margin: 0 10% 0 0;
+    padding: 0 auto;
+}
+.first{
+	display: flex;
+	justify-content: space-evenly;
+    /* width: 80%;  */
+	padding: 2%;
+	margin: 0 auto;
+    
+}
+
+.containerOne h1{
+	margin: 9% 0 0 1%;
+    font-size: 70px;
+	/* width: 50%; */
+	text-align: center;
+	
+}
+
+.second{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 0 10%;
+    width: 80%;
+	padding:2%;
+}
+
+.second .one{
+    font-weight: 200;
+    margin:0 2% 0 0;
+}
+
+.middle-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	
+}
+
+.third{
+	display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 10%;
+	width: 80%;
+	padding: 2%;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 10%;
+	padding: 2%;
+}
+
+/* .contact, h5{	
+	margin: 0 0 0 5%;
+	padding: 0;
+}
+
+.contact, p{	
+	margin: 0 0 0 5%;
+	padding: 0 auto;
+} */
+
+
+
+footer{
+	
+	padding:5% 0 0 0;
+	text-align:center;
+}
+
+
+
+button{
+	width:100px;
+	background-color:white;
+	border: 2px solid black;
+	margin:0 0 0 45%;
+}
+
+.line{
+	border:1px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+@media (max-width: 800px){
+
+    html{
+        font-size: small; 
+        font-family: 'Indie Flower', cursive;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+    }
+
+    .logo{
+        margin: 10%;
+    }
+
+    .links a{
+        margin:0 auto;
+    }
+
+    .logoTwo{
+        display: none;
+    }
+    button{
+        width: 100px;
+        background-color:white;
+        border: 2px solid black;
+        margin: 0 0 10% 35%;
+        width: 30%;
+        height: 10%;
+    }
+
+    .containerOne h1{
+        margin: 9% 0 10% 30%;
+        font-size: 75px;
+        width: 40%;
+        text-align: center;
+    }
+
+    
+}
+
+/* @media (max-width: 480px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoContainer{
+        width:15%;
+    }
+
+    .links{
+        width: 90%;
+    }
+
+    #about div{
+        width: 90%;
+    }
+} */
 
