@@ -1,3 +1,606 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* Set every element's box-sizing to border-box */
+/* * {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Indie Flower', cursive, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}  */
+
+/* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 100%;
+    font-family: 'Bangers', cursive, sans-serif;
+    line-height: 1;
+}
+h5, h4, h3{
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    margin: 5% 0 5% 0;
+}
+
+p{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    /* margin: 2%; */
+    
+    /* word-spacing: 1rem; */
+}  
+nav{
+    display:flex;
+	justify-content: space-evenly;
+}
+
+.links{
+	display:flex;
+	justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
 
 
+nav a{
+	color:grey;
+	text-decoration:none;
+}
+nav a:hover{
+	color:#AFEEEE;
+}
+
+.logo{
+    margin: 0 0 0 0;
+}
+
+.logoTwo{
+    margin: 0 10% 0 0;
+    padding: 0 auto;
+}
+.first{
+	display: flex;
+	justify-content: space-evenly;
+    /* width: 80%;  */
+	padding: 2%;
+	margin: 0 auto;
+    
+}
+
+.containerOne h1{
+	margin: 9% 0 0 1%;
+    font-size: 70px;
+	/* width: 50%; */
+	text-align: center;
+	
+}
+
+.second{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 0 10%;
+    width: 80%;
+	padding:2%;
+}
+
+.second .one{
+    font-weight: 200;
+    margin:0 2% 0 0; 
+}
+
+.middle-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	
+}
+
+.third{
+	display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 10%;
+	width: 80%;
+	padding: 2%;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 10%;
+	padding: 2%;
+}
+
+/* .contact, h5{	
+	margin: 0 0 0 5%;
+	padding: 0;
+}
+
+.contact, p{	
+	margin: 0 0 0 5%;
+	padding: 0 auto;
+} */
+
+
+
+footer{
+	
+	padding:5% 0 0 0;
+	text-align:center;
+}
+
+
+
+button{
+	width:100px;
+	background-color:white;
+	border: 2px solid black;
+	margin:0 0 0 45%;
+}
+
+.line{
+	border:1px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+/*services page*/
+/* header nav{
+	display:flex;
+	justify-content:space-between;
+	width:88%;
+	font-size:20px;
+	margin: 0 auto;
+  }
+
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	width:100%;
+	margin: 0 0 0 6%;
+	padding:0 12% 0 0;
+}
+
+.container a{
+	color:gray 
+}
+
+.logo{
+	margin:0 0 0 10px;
+} */
+
+.topImg{
+	display: flex;
+	justify-content: center;
+}
+
+.topImg .services-header-img{
+	display: flex;
+	justify-content: center;
+	width:88%;
+	
+}
+
+.containerOne{
+    
+	/* display: flex;
+	justify-content: flex-start;
+	margin:2px auto;
+	width:100%; */
+}
+.text{
+	display: flex;
+	justify-content: center;
+	padding:5%;
+}
+/* .text .service{
+	width:50%;
+	flex-basis: content;
+} */
+
+/* .service h3{
+	line-height: 40px;
+} */
+ /*first section*/
+.bodyOne{
+	display: flex;	
+	margin: 0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+
+.ddBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.dd h4{
+	line-height: 40px;;
+}
+/* .ddBody .dd{
+	width:50%;
+	flex-basis: content;
+} */
+
+.ux{
+	display: flex;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+.ux h4{
+	line-height: 40px;
+}
+/* .ux .uxBody{
+	width:50%;
+	flex-basis: content;
+} */
+/*second section*/
+.bodyTwo{
+	display: flex;	
+	margin:0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+.dmBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.dm h4{
+	line-height: 40px;
+}
+
+.wdBody{
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.wd {
+	width:50%;
+	flex-basis: content;
+}
+.wd h4{
+	line-height: 40px;;
+}
+/*third section*/
+.bodyThree{
+	display: flex;
+	justify-content: flex-start;
+	margin:0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+.iosBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.ios h4{
+	line-height: 40px;;
+}
+/* .iosBody .ios{
+	width:50%;
+	flex-basis: content;
+} */
+
+.ad{
+	/* width:50%;
+	flex-basis: content; */
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.adBody{
+	/* display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:10%; */
+	width:50%;
+	flex-basis: content;
+	
+}
+
+.adBody h4{
+	line-height: 40px;;
+}
+
+
+
+.wdBody{
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+}
+
+.wd .wdBody{
+	width:50%;
+	flex-basis: content;
+}
+/*bottom section*/
+.bottom{
+	display: flex;
+	justify-content: flex-start;
+	margin:0 auto;
+	grid-gap:5px;
+	width: 88%;
+}
+
+.bottomBody{
+	padding:5%;
+	width:50%;
+}
+
+.bb li{
+	line-height: 10px;
+	margin: 5%;
+}
+
+.bb h4{
+	line-height: 40px;
+	
+}
+
+.bottomPic{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+	
+}
+
+footer{
+	text-align: center;
+	margin: 5%;
+}
+
+.learnMore2{
+	text-align: center;
+	margin: 10% 0 0 25%;
+	border: 3px solid black;
+	width:50%;
+}
+
+.line2{
+	border-top: 2px dotted black;	
+	margin:5% 0 0 0;
+}
+
+
+
+/*about me page*/
+.aboutMe{
+	text-align: center;
+	margin: 10% 0 0 25%;
+	width:50%;
+	height: 200px;
+}
+.aboutMe img{
+ border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;;
+}
+
+.aboutMe-img{
+	height:400px;
+	width:92%;
+}
+
+
+@media (max-width: 800px){
+
+    html{
+        font-size: small; 
+        font-family: 'Indie Flower', cursive;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .logo{
+        margin: 10%;
+    }
+
+    .links a{
+        margin:0 auto;
+    }
+
+    .logoTwo{
+        display: none;
+    }
+    button{
+        width: 100px;
+        background-color:white;
+        border: 2px solid black;
+        margin: 0 0 10% 35%;
+        width: 30%;
+        height: 10%;
+    }
+
+    .containerOne h1{
+        margin: 9% 0 10% 30%;
+        font-size: 75px;
+        width: 40%;
+        text-align: center;
+    }
+    .bodyOne{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bodyTwo{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bodyThree{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bottom{
+        /* display: flex;
+        flex-direction: column; */
+        justify-content: center;
+        /* margin: 0 auto;
+        grid-gap: 5px;
+        width: 88%; */
+    }
+
+    .bottomPic{
+        display: none;
+    }
+
+    .bottomBody{
+        padding: 1%;
+        width: 80%;
+    }
+
+    
+}
+
+@media (max-width: 480px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        letter-spacing: .3rem;
+    }
+
+    nav a {
+        
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+      }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 10%;
+        width: 80%;
+        padding:2%;
+    }
+
+    .third{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 10%;
+        width: 80%;
+        padding: 2%;
+    }
+
+    .containerOne h1{
+        margin: 0 0 0 20%;
+        /* font-size: 70px; */
+        width: 60%;
+        /* text-align: center; */
+    }
+
+    /* .logoContainer{
+        width:15%;
+    }
+
+    .links{
+        width: 90%;
+    }
+
+    #about div{
+        width: 90%;
+    } */
+}
