@@ -73,9 +73,9 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive, sans-serif;
     line-height: 1;
 }
-h5{
+h5, h4, h3{
     letter-spacing: .2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5% 0 5% 0;
 }
 
@@ -203,6 +203,266 @@ button{
 	width: 80%;
 }
 
+/*services page*/
+/* header nav{
+	display:flex;
+	justify-content:space-between;
+	width:88%;
+	font-size:20px;
+	margin: 0 auto;
+  }
+
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	width:100%;
+	margin: 0 0 0 6%;
+	padding:0 12% 0 0;
+}
+
+.container a{
+	color:gray 
+}
+
+.logo{
+	margin:0 0 0 10px;
+} */
+
+.topImg{
+	display: flex;
+	justify-content: center;
+}
+
+.topImg .services-header-img{
+	display: flex;
+	justify-content: center;
+	width:88%;
+	
+}
+
+.containerOne{
+    
+	/* display: flex;
+	justify-content: flex-start;
+	margin:2px auto;
+	width:100%; */
+}
+.text{
+	display: flex;
+	justify-content: center;
+	padding:5%;
+}
+/* .text .service{
+	width:50%;
+	flex-basis: content;
+} */
+
+/* .service h3{
+	line-height: 40px;
+} */
+ /*first section*/
+.bodyOne{
+	display: flex;	
+	margin: 0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+
+.ddBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.dd h4{
+	line-height: 40px;;
+}
+/* .ddBody .dd{
+	width:50%;
+	flex-basis: content;
+} */
+
+.ux{
+	display: flex;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+.ux h4{
+	line-height: 40px;
+}
+/* .ux .uxBody{
+	width:50%;
+	flex-basis: content;
+} */
+/*second section*/
+.bodyTwo{
+	display: flex;	
+	margin:0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+.dmBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.dm h4{
+	line-height: 40px;
+}
+
+.wdBody{
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.wd {
+	width:50%;
+	flex-basis: content;
+}
+.wd h4{
+	line-height: 40px;;
+}
+/*third section*/
+.bodyThree{
+	display: flex;
+	justify-content: flex-start;
+	margin:0 auto;
+	gap:50px;
+	padding: 50px;
+	
+}
+.iosBody{
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.ios h4{
+	line-height: 40px;;
+}
+/* .iosBody .ios{
+	width:50%;
+	flex-basis: content;
+} */
+
+.ad{
+	/* width:50%;
+	flex-basis: content; */
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+	background-color: lightgray;
+}
+
+.adBody{
+	/* display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:10%; */
+	width:50%;
+	flex-basis: content;
+	
+}
+
+.adBody h4{
+	line-height: 40px;;
+}
+
+
+
+.wdBody{
+	display: flex;
+	justify-content: center;
+	border:2px solid black;
+	padding:5%;
+}
+
+.wd .wdBody{
+	width:50%;
+	flex-basis: content;
+}
+/*bottom section*/
+.bottom{
+	display: flex;
+	justify-content: flex-start;
+	margin:0 auto;
+	grid-gap:5px;
+	width: 88%;
+}
+
+.bottomBody{
+	padding:5%;
+	width:50%;
+}
+
+.bb li{
+	line-height: 10px;
+	margin: 5%;
+}
+
+.bb h4{
+	line-height: 40px;
+	
+}
+
+.bottomPic{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+	
+}
+
+footer{
+	text-align: center;
+	margin: 5%;
+}
+
+.learnMore2{
+	text-align: center;
+	margin: 10% 0 0 25%;
+	border: 3px solid black;
+	width:50%;
+}
+
+.line2{
+	border-top: 2px dotted black;	
+	margin:5% 0 0 0;
+}
+
+
+
+/*about me page*/
+.aboutMe{
+	text-align: center;
+	margin: 10% 0 0 25%;
+	width:50%;
+	height: 200px;
+}
+.aboutMe img{
+ border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;;
+}
+
+.aboutMe-img{
+	height:400px;
+	width:92%;
+}
+
+
 @media (max-width: 800px){
 
     html{
@@ -215,7 +475,12 @@ button{
         align-items: center;
     }
     .links{
-        display: flex;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 100%;
     }
 
     .logo{
@@ -244,6 +509,41 @@ button{
         width: 40%;
         text-align: center;
     }
+    .bodyOne{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bodyTwo{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bodyThree{
+        display: flex;
+        flex-direction: column;	
+                
+    }
+
+    .bottom{
+        /* display: flex;
+        flex-direction: column; */
+        justify-content: center;
+        /* margin: 0 auto;
+        grid-gap: 5px;
+        width: 88%; */
+    }
+
+    .bottomPic{
+        display: none;
+    }
+
+    .bottomBody{
+        padding: 1%;
+        width: 80%;
+    }
 
     
 }
@@ -258,7 +558,7 @@ button{
     }
 
     nav a {
-        float: left;
+        
         display: block;
         color: gray;
         text-align: center;
